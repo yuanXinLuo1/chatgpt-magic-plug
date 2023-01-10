@@ -13,6 +13,9 @@ class OpenAi:
         # 使用的模型:功能最强大的 GPT-3
         self.model = "text-davinci-003"
         self.url = "https://api.openai.com/v1/completions"
+        self.keys = "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"
+        self.max_tokens = 1024
+        self.temperature = 0.5
 
     def get_answer(self,prompt,max_tokens,temperature):
         keys = configs['keys']
